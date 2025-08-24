@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap'); 
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f7fa;
+}    
+
+body {
+  padding-top: 100px;
+}
+
+header {
+    width: 95vw;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 20px;
+    color: #3a3f73;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+}
+
+nav ul li a {
+    color: #67728d;
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #3a3f73;
+}
+
+.inicio-h1 {
+
+    text-align: center;
+    margin: 80px 0 20px;
+    font-size: 28px;
+    color: #3a3f73;
+
+}
+
+.p-h1 {
+    
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #67728d;
+}
+
+/* 🔹 Menu */
+.menu {
+  text-align: center;
+  margin: 30px 0;
+}
+.menu button {
+  font-family: "Poppins", sans-serif;
+  margin: 8px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3a3f73;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+.menu button:hover,
+.menu button.active {
+  background: #161a42;  /* cor mais escura */
+  transform: scale(1.05);
+}
+
+/* 🔹 Dropdown */
+.dropdown {
+  display: none;
+  width: 85%;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.dropdown h2 {
+  text-align: center;
+  color: #3a3f73;
+  margin-bottom: 20px;
+}
+
+/* 🔹 Atividades em coluna */
+.atividade {
+  flex-direction: column;
+  align-items: flex-start;
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.atividade:hover {
+  transform: translateY(-4px);
+}
+.atividade img {
+  width: 120px;
+  height: auto;
+  border-radius: 6px;
+  margin-right: 12px;
+}
+.atividade div {
+  flex: 1;
+}
+.atividade h3 {
+  margin: 0 0 6px;
+  color: #3a3f73;
+}
+.atividade p {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #444;
+}
+.atividade a {
+  display: inline-block;
+  padding: 6px 12px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .atividade {
+    flex-direction: column;
+    text-align: center;
+  }
+  .atividade img {
+    margin: 0 auto 10px;
+    width: 100%;
+    max-width: 220px;
+  }
+}
