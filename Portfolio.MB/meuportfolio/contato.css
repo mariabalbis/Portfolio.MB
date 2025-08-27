@@ -1,0 +1,134 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Navbar */
+  header {
+    background: #3A3F72;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+  }
+  
+  header .logo {
+    font-size: 1.5rem;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover,
+  header nav ul li a.active {
+    color: #cfcfff;
+  }
+  
+  /* Container principal */
+  .container {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  .container h2 {
+    font-size: 1.8rem;
+    color: #3A3F72;
+    margin-bottom: 0.5rem;
+  }
+  
+  .container .subtitle {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  /* Formulário */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+  }
+  
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #3A3F72;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group textarea:focus {
+    border-color: #3A3F72;
+    box-shadow: 0 0 5px rgba(58, 63, 114, 0.4);
+    outline: none;
+  }
+  
+  .input-group textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  /* Botão */
+  .btn-enviar {
+    padding: 1rem;
+    background: #3A3F72;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+    background: #2c3059;
+  }
+  
+  /* Rodapé */
+  footer {
+    margin-top: 3rem;
+    text-align: center;
+    padding: 1.5rem;
+    background: #f5f5f5;
+    color: #555;
+    font-size: 0.9rem;
+  }
+  
